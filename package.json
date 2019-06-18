@@ -6,15 +6,17 @@
   "dependencies": {
     "express": "^4.16.2",
     "mysql2": "^1.5.1",
-    "sequelize": "^4.23.4"
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^4.44.0"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node":"9",
-    "npm":"5"
+    "node": "9",
+    "npm": "5"
   },
   "author": "",
   "license": "ISC"

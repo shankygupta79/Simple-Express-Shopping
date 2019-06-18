@@ -1,12 +1,7 @@
 const Sequelize = require('sequelize')
 
-const db = new Sequelize('shopdb', 'shopper', 'shoppass', {
-    host: 'localhost',
-    dialect: 'mysql',
-    pool: {
-        min: 0,
-        max: 5,
-    }
+const db = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
 })
 
 const User = db.define('users', {

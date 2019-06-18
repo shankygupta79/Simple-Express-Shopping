@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const SERVER_PORT=process.env.PORT || 333
+const SERVER_PORT=process.env.PORT || 3333
 const app = express();
 
 app.use(express.json())
@@ -9,4 +9,4 @@ app.use(express.urlencoded({extended: true}))
 app.use('/', express.static(path.join(__dirname, 'public')))
 app.use('/api', require('./routes/api/index.js').route)
 
-app.listen(SERVER_PORT, () => console.log('Server started at http://localhost:2678'))
+app.listen(SERVER_PORT, () => console.log('Server started at http://localhost:3333'))
